@@ -121,7 +121,7 @@ def set_fileglobal_metadata(nas):
     nas.metadata.instr_type = 'smps'
     nas.metadata.lab_code = 'NO01L'#ASK JPS FOR STATION AND PLATFORM CODES
     nas.metadata.instr_name = 'smps_3938_TSI'
-    nas.metadata.method = '' #Need internal SOP
+    nas.metadata.method = 'NO01L_gc_ms' #Need internal SOP
     nas.metadata.regime = 'IMG' 
     nas.metadata.matrix = 'air'
     #nas.metadata.comp_name   will be set on variable level
