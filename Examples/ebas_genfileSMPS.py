@@ -111,7 +111,7 @@ def set_fileglobal_metadata(nas):
     nas.metadata.station_landuse = 'Residential'
     nas.metadata.station_setting = 'Mountain'
     nas.metadata.station_gaw_type = 'G'
-    nas.metadata.station_wmo_region = 6
+    nas.metadata.station_wmo_region = 4
     nas.metadata.station_latitude = 36.212801
     nas.metadata.station_longitude = -81.692592
     nas.metadata.station_altitude = 1079.0
