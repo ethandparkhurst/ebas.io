@@ -1,0 +1,1 @@
+PYTHONPATH=/data/git_repos/EBAS_CORE/ebas:/data/git_repos/webpage_ebas_data_submit/template_generator python3 gen_ebas_metadata.py
