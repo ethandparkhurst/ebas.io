@@ -1,3 +1,5 @@
+
+
 #!/usr/bin/env python
 # coding=utf-8
 """
@@ -18,8 +20,18 @@ from nilutility.datatypes import DataObject
 from ebas.domain.basic_domain_logic.time_period import estimate_period_code, \
     estimate_resolution_code, estimate_sample_duration_code
 import datetime
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+from pathlib import Path
+
+
 
 __version__ = '1.00.00'
+
+folderpath = Path(input("\nInput the full path of the folder youd like to access:\n"))
+ParentPath = folderpath.parent
+
 
 def set_fileglobal_metadata(nas):
     """
@@ -186,6 +198,9 @@ def set_variables(nas):
     Returns:
         None
     """
+    
+
+
     # variable 1: examples for missing values and flagging
     values = [1.22, 2.33, None, 4.55]   # missing value is None! #HERE IS WHERE WE NEED TO IMPORT CSV FILES, NEED TO GENERATE FLAGS BEFOREHAND
     flags = [[], [632, 665], [999], []]
