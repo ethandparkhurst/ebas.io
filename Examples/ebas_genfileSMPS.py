@@ -118,16 +118,16 @@ def set_fileglobal_metadata(nas):
 
     # More file global metadata, but those can be overridden per variable
     # See set_variables for examples
-    nas.metadata.instr_type = 'passive_puf'
-    nas.metadata.lab_code = 'NO01L'
-    nas.metadata.instr_name = 'puf_42'
-    nas.metadata.method = 'NO01L_gc_ms'
-    nas.metadata.regime = 'IMG'
+    nas.metadata.instr_type = 'smps'
+    nas.metadata.lab_code = 'NO01L'#ASK JPS FOR STATION AND PLATFORM CODES
+    nas.metadata.instr_name = 'smps_3938_TSI'
+    nas.metadata.method = '' #Need internal SOP
+    nas.metadata.regime = 'IMG' 
     nas.metadata.matrix = 'air'
     #nas.metadata.comp_name   will be set on variable level
     #nas.metadata.unit        will be set on variable level
     nas.metadata.statistics = 'arithmetic mean'
-    nas.metadata.datalevel = '2'
+    nas.metadata.datalevel = '1'
 
 def set_time_axes(nas):
     """
